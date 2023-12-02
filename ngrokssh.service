@@ -1,0 +1,10 @@
+[Unit]
+Description=Ngrok SSH service
+
+[Service]
+ExecStart=/home/user/ssh.sh
+WorkingDirectory=/home/user/ngrokfetch
+Environment="PYTHONPATH=/home/user/.local/lib/python3.11/site-packages/"
+
+[Install]
+WantedBy=multi-user.target
